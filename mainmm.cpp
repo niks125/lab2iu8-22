@@ -4,19 +4,19 @@
 using namespace std;
 
 /**
-для слияния
+@brief для слияния
 */
 #define maxn 100
 
 int zebra[maxn];
 
 /**
-для слияния
+@brief для слияния
 */
 
 void merge(int l, int r) {
 	/**
-	функция слияния
+	@brief функция слияния
 	*/
     if (r == l)
         return;
@@ -53,14 +53,14 @@ int main()
 	cin >> zna4enie;
 	if (zna4enie == 1){
 	/**
-	Проверка на опперацию
-    Пузырьковая сортировка
+	@brief Проверка на опперацию
+    @brief Пузырьковая сортировка
 	*/
 	 const int n = 5;
 	 int a[n];
 	 for (int i = 0; i < n; ++i) 
 		 /**
-		 создаем массив элементов
+		 @brief создаем массив элементов
 		 */
 	 {
 		int k = rand()%100-1;
@@ -68,7 +68,7 @@ int main()
 	   cout << a[i] << endl;
 	 }
 	 /** 
-	 сама сортировка
+	 @brief сама сортировка
 	 */
 	  for (int i = n - 1; i >= 1; --i)
 	   for (int j = 0; j < i; ++j)
@@ -83,18 +83,18 @@ int main()
    	 cout << endl;
 	 for (int i = 0; i < n; ++i) 
      /** 
-	 вывод
+	 @brief вывод
 	 */
 	 cout << a[i] << endl;
 	} 
 	/**
-	Конец сортировки пузырьком
+	@brief Конец сортировки пузырьком
 	*/
 
 	if (zna4enie == 2)
 	/**
-	Проверка на опперацию
-	слияние
+	@brief Проверка на опперацию
+	@brief слияние
 	*/
 	{
 		int n;
@@ -113,6 +113,6 @@ int main()
     return 0;
 	}
 	/**
-	конец слияния
+	@brief конец слияния
 	*/
 }
