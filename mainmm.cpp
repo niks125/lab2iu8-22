@@ -3,21 +3,19 @@
 #include <conio.h>
 using namespace std;
 
-/**
-@brief для слияния
-*/
-#define maxn 100
 
-int zebra[maxn];
+#define maxn 100/// для слияния
 
-/**
-@brief для слияния
-*/
+int zebra[maxn];/// для слияния
+
+
 
 void merge(int l, int r) {
-	/**
-	@brief функция слияния
-	*/
+	/*! 
+       \sa if () 
+       \param r первый аргумент. 
+       \param l второй аргумент. 
+     */ 
     if (r == l)
         return;
     if (r - l == 1) { 
@@ -51,24 +49,26 @@ int main()
 	int zna4enie = 0;
 	cout << "Vvedite operaziu: 1-puzirk, 2-sli9nie" << endl;
 	cin >> zna4enie;
+	/*! 
+       \sa if () Проверка на опперацию Пузырьковая сортировка
+       \param zna4enie проверка на выполнение операции. 
+     */ 
 	if (zna4enie == 1){
-	/**
-	@brief Проверка на опперацию
-    @brief Пузырьковая сортировка
-	*/
 	 const int n = 5;
 	 int a[n];
+	 /*! 
+       \sa for () Проверка на опперацию Пузырьковая сортировка
+       \param i счетчик.
+	   \param n макс знач
+     */
 	 for (int i = 0; i < n; ++i) 
-		 /**
-		 @brief создаем массив элементов
-		 */
 	 {
 		int k = rand()%100-1;
 	    a[i] = k;
 	   cout << a[i] << endl;
 	 }
-	 /** 
-	 @brief сама сортировка
+	 /** сама 
+	 *сортировка
 	 */
 	  for (int i = n - 1; i >= 1; --i)
 	   for (int j = 0; j < i; ++j)
@@ -82,19 +82,19 @@ int main()
 	  }
    	 cout << endl;
 	 for (int i = 0; i < n; ++i) 
-     /** 
-	 @brief вывод
+     /** вывод
+	 *вывод
 	 */
 	 cout << a[i] << endl;
 	} 
-	/**
-	@brief Конец сортировки пузырьком
+	/**Конец 
+	*сортировки пузырьком
 	*/
 
 	if (zna4enie == 2)
-	/**
-	@brief Проверка на опперацию
-	@brief слияние
+	/**Проверка 
+	* на опперацию
+	* слияние
 	*/
 	{
 		int n;
@@ -112,7 +112,7 @@ int main()
     getch();
     return 0;
 	}
-	/**
-	@brief конец слияния
+	/**конец 
+	* слияния
 	*/
 }
